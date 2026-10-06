@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>台南兩天一夜</title>
+  <style>
+    :root {
+      --ink: #28343b;
+      --muted: #6e777b;
+      --paper: #fffdf8;
+      --cream: #f7efe2;
+      --accent: #c65d3a;
+      --accent-dark: #8e3f2a;
+      --line: #eadfd2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.8;
+    }
+
+    .page {
+      width: min(100% - 28px, 680px);
+      margin: 0 auto;
+      padding: 28px 0 44px;
+    }
+
+    header {
+      padding: 30px 22px 28px;
+      color: #fffaf3;
+      background: var(--accent);
+      border-radius: 24px;
+      box-shadow: 0 10px 24px rgba(104, 60, 38, .12);
+    }
+
+    .eyebrow {
+      margin: 0 0 5px;
+      font-size: .82rem;
+      letter-spacing: .16em;
+      opacity: .82;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 10vw, 3.5rem);
+      letter-spacing: .08em;
+      line-height: 1.25;
+    }
+
+    .intro {
+      margin: 12px 0 0;
+      font-size: 1.08rem;
+      opacity: .92;
+    }
+
+    .trip-info {
+      display: grid;
+      gap: 10px;
+      margin-top: 22px;
+      padding: 16px;
+      color: var(--ink);
+      background: #fffaf3;
+      border-radius: 16px;
+      font-size: 1.1rem;
+      line-height: 1.55;
+    }
+
+    .trip-info p { margin: 0; }
+
+    .trip-info strong {
+      display: inline-block;
+      min-width: 4.5em;
+      color: var(--accent-dark);
+    }
+
+    .day {
+      margin-top: 24px;
+      padding: 22px 18px 8px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+    }
+
+    .day-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 0 0 9px;
+      color: var(--accent-dark);
+    }
+
+    .day-number {
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.7rem;
+      letter-spacing: .08em;
+    }
+
+    .stop {
+      position: relative;
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 14px;
+      padding: 17px 0 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .time {
+      color: var(--accent-dark);
+      font-size: 1.08rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .place {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+
+    .note {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    footer {
+      padding: 22px 4px 0;
+      color: var(--muted);
+      font-size: .95rem;
+      text-align: center;
+    }
+
+    @media (min-width: 560px) {
+      .page { padding-top: 42px; }
+      header { padding: 34px 32px 31px; }
+      .day { padding-left: 26px; padding-right: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">TAIWAN · WEEKEND TRIP</p>
+      <h1>最好玩的台南行</h1>
+      <p class="intro">慢慢走、好好吃，和朋友一起玩台南。</p>
+      <div class="trip-info" aria-label="旅程基本資料">
+        <p><strong>去哪裡</strong>台南市區、安平、漁光島</p>
+        <p><strong>日期</strong>示意：10 月 18 日（六）～10 月 19 日（日）</p>
+        <p><strong>時間</strong>示意：第一天 10:00 集合，第二天 16:30 結束</p>
+      </div>
+    </header>
+
+    <section class="day" aria-labelledby="day-one">
+      <div class="day-heading">
+        <span class="day-number">DAY 01</span>
+        <h2 id="day-one">第一天・老城散步</h2>
+      </div>
+
+      <article class="stop">
+        <time class="time">10:30</time>
+        <div>
+          <h3 class="place">示意店・阿霞早午餐</h3>
+          <p class="note">先吃一份台南風味早餐，補足散步的能量。</p>
+          <p class="note">預計金額：NT$150–300／人</p>
+        </div>
+      </article>
+
+      <article class="stop">
+        <time class="time">12:00</time>
+        <div>
+          <h3 class="place">赤崁樓</h3>
+          <p class="note">走進古蹟院落，看看老城牆與午後光影。</p>
+          <p class="note">預計金額：NT$50–100／人</p>
+        </div>
+      </article>
+
+      <article class="stop">
+        <time class="time">15:00</time>
+        <div>
+          <h3 class="place">示意店・府城茶屋</h3>
+          <p class="note">找間茶屋坐下來，喝杯茶、交換今天的照片。</p>
+          <p class="note">預計金額：NT$80–200／人</p>
+        </div>
+      </article>
+
+      <article class="stop">
+        <time class="time">18:30</time>
+        <div>
+          <h3 class="place">神農街 × 示意店・海安小食堂</h3>
+          <p class="note">傍晚逛街看燈，再用幾道小菜開啟台南夜晚。</p>
+          <p class="note">預計金額：NT$200–450／人</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="day" aria-labelledby="day-two">
+      <div class="day-heading">
+        <span class="day-number">DAY 02</span>
+        <h2 id="day-two">第二天・海風與甜點</h2>
+      </div>
+
+      <article class="stop">
+        <time class="time">09:30</time>
+        <div>
+          <h3 class="place">示意店・鹽田早餐室</h3>
+          <p class="note">用一頓輕鬆早餐開始第二天，順手買杯外帶咖啡。</p>
+          <p class="note">預計金額：NT$80–180／人</p>
+        </div>
+      </article>
+
+      <article class="stop">
+        <time class="time">11:00</time>
+        <div>
+          <h3 class="place">安平古堡</h3>
+          <p class="note">沿著安平老街慢慢逛，認識台南的海港故事。</p>
+          <p class="note">預計金額：NT$50–100／人</p>
+        </div>
+      </article>
+
+      <article class="stop">
+        <time class="time">14:30</time>
+        <div>
+          <h3 class="place">漁光島</h3>
+          <p class="note">到海邊吹風、看樹影，留一段不趕行程的時間。</p>
+          <p class="note">預計金額：NT$0–100／人</p>
+        </div>
+      </article>
+
+      <article class="stop">
+        <time class="time">16:30</time>
+        <div>
+          <h3 class="place">示意店・樹下冰店</h3>
+          <p class="note">用一碗清爽甜品收尾，再依依不捨地回程。</p>
+          <p class="note">預計金額：NT$80–180／人</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>店名與時間皆為示意，之後再一起換成實際安排。</footer>
+
+    <section aria-labelledby="reminders" style="margin-top: 20px; padding: 20px 18px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 20px;">
+      <h2 id="reminders" style="margin: 0 0 10px; color: var(--accent-dark); font-size: 1.35rem; letter-spacing: .08em;">行前提醒</h2>
+      <p style="margin: 6px 0; font-size: .95rem;"><strong>天氣：</strong>示意：晴時多雲，約 24–30°C。</p>
+      <p style="margin: 6px 0; font-size: .95rem;"><strong>要帶的東西：</strong>示意：水壺、雨具、防曬用品、行動電源。</p>
+      <p style="margin: 6px 0; font-size: .95rem;"><strong>集合時間：</strong>示意：第一天上午 10:00，台南車站前。</p>
+    </section>
+  </main>
+</body>
+</html>
